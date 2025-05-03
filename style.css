@@ -77,9 +77,9 @@ body {
 
 #scoreCont {
   position: absolute;
-  right: 45px;
-  top: 31px;
-  font-size: 25px;
+  right: 42px;
+  top: 310px;
+  font-size: 20-px;
   font-family: sans-serif;
   font-weight: bold;
   background: white;
