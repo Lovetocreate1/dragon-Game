@@ -2,19 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>iDragon - JavaScript Game</title>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <title>Dino Game</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
 </head>
 <body>
     <div class="gameContainer">
         <div class="gameOver">Welcome to iDragon Adventures</div>
-        <!-- <div class="gameOver">Welcome to iDragon - Created by Lovely</div> -->
+        <div class="scoreCont" id="scoreCont">Your Score: 0</div>
+        <div class="gameOver"> </div>
         <div class="dino"></div>
-        <div id="scoreCont">Your Score: 0</div>
         <div class="obstacle obstacleAni"></div>
+        <div class="controls">
+            <button id="leftBtn">◀</button>
+            <button id="jumpBtn">⭡</button>
+            <button id="rightBtn">▶</button>
+        </div>
     </div>
+    <audio id="bgMusic" src="music.mp3" preload="auto"></audio>
+    <audio id="gameOverSound" src="gameover.mp3" preload="auto"></audio>
+    
+    <script src="script.js"></script>
 </body>
 </html>
