@@ -18,13 +18,19 @@ function startAudio() {
 }
 
 function jump() {
+    const dino = document.querySelector('.dino');
     if (!dino.classList.contains('animateDino')) {
         dino.classList.add('animateDino');
         setTimeout(() => {
             dino.classList.remove('animateDino');
-        }, 700);
+        }, 600); // Match with your animation duration
     }
 }
+
+// Touch event (fallback, in case you want tap anywhere to jump)
+document.body.addEventListener('touchstart', function () {
+    jump();
+}, { passive: true });
 
 function moveLeft() {
     let dinoX = parseInt(window.getComputedStyle(dino).getPropertyValue('left'));
