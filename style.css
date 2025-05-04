@@ -81,6 +81,7 @@
     left: 50%;
     transform: translateX(-50%);
     gap: 20px;
+    z-index: 10;
 }
 
 .controls button {
@@ -90,6 +91,7 @@
     border: none;
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    cursor: pointer;
 }
 
 @keyframes dino {
@@ -117,7 +119,7 @@
     .gameOver {
         font-size: 32px;
         top: 40px;
-        justify-content: center;
+       margin-bottom: 15px;
 
     }
     #scoreCont {
@@ -165,4 +167,5 @@
         padding: 10px 15px;
     }
 }
-}
+    
+    
